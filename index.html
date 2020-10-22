@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
 
-    <title>My page title</title>
+    <title>Mila Logistics</title>
     <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300|Sonsie+One" rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="../css/style.css" type="text/css">
     <script type="text/javascript" src="../js/script.js"></script>
@@ -11,29 +11,112 @@
   </head>
 
   <body>
-    <!-- Here is our main header that is used across all the pages of our website -->
 
-    <header>
-      <h1>Header</h1>
-    </header>
+    <nav class="w-90"> <!-- NavBar -->
+      <div class="nav--callus"> 
+        <h4>ZADZWOŃ DO NAS</h4>
+      </div>
+      <div class="nav--menu-switcher">
+        <figure>
+          <img>
+        </figure>
+        <h4>MENU</h4>
+      </div>
+    </nav><!-- End of NavBar -->
 
-    <nav>
-      <ul>
-        <li><a href="#">Home</a></li>
-        <li><a href="#">O nas</a></li>
-        <li><a href="#">Oferta</a></li>
-        <li><a href="#">Kontakt</a></li>
-      </ul>
-     </nav>
+    <section class="menu"> <!-- Full Window Menu -->
+      <div class="menu--content">
+        <h1>MENU</h1>
+        <ul class="nav-items">
+          <li><a href="../index.html">HOME</a></li>
+          <li><a href="../about-us.html">O NAS</a></li>
+          <li><a href="../offer.html">OFERTA</a></li>
+          <li><a href="../contact.html">KONTAKT</a></li>
+        </ul>
+        <div class="nav--callus"> 
+          <h4>ZADZWOŃ DO NAS</h4>
+        </div>
+      </div>
+      <aside class="menu--close">
+        <figure>
+          <img>
+        </figure>
+        <p>ZAMKNIJ</p>
+      </aside>
+    </section> <!-- End of Full Window Menu -->
 
-    <main>
+    <main> <!-- Sections -->
 
-    </main>
+      <section class="container hero">
+        <div class="wrapper w-90">
+          <div class="hero--logotype">
+
+          </div>
+          <div class="hero--encour">
+
+          </div>
+        </div>
+      </section>
+
+      <section class="container about-us">
+        <div class="wrapper w-90">
+          <div class="about-us--map">
+
+          </div>
+          <div class="about-us--content">
+
+          </div>
+        </div>
+      </section>
+
+      <section class="container offer">
+        <div class="wrapper w-90">
+          <div class="offer--content">
+
+          </div>
+          <div class="offer--heading">
+
+          </div>
+        </div>
+      </section>
+
+      <section class="container contact">
+        <div class="wrapper w-90">
+          <div class="contact--form">
+
+          </div>
+        </div>
+      </section>
+
+    </main> <!-- End of Sections -->
 
 
-    <footer>
-      <p>&copy;Copyright.</p>
-    </footer>
+    <footer> <!-- Footer -->
+      <figure class="footer--logotype">
+        <img>
+      </figure>
+      <div class="footer--copyright">
+        <p>&copy; <span id="current-year"></span> Mila Logistics. Wszelkie prawa zastrzeżone.</p>
+        <p>&copy; Made with <span class="footer--span__pink">love</span> by <a href="https://jakubkowalski.dev" target="_blank">jakubkowalski.dev</a></p>
+      </div>
+      <div class="footer--contact">
+        <h5>SKONTAKTUJ SIĘ</h5>
+        <p><a href="callto:+48000000000">Tel: +48 000 000 000</a></p>
+        <p><a href="mailto:kontakt@milalogistics.pl">E-mail: kontakt@milalogistics.pl</a></p>
+      </div>
+      <div class="footer--quick-nav">
+        <h5>NAWIGACJA</h5>
+        <ul class="p--footer">
+          <li><a href="../index.html">HOME</a></li>
+          <li><a href="../about-us.html">O NAS</a></li>
+          <li><a href="../offer.html">OFERTA</a></li>
+          <li><a href="../contact.html">KONTAKT</a></li>
+        </ul>
+      </div>
+    </footer> <!-- End of Footer -->
 
-  </body>
+  </body> <!-- End of Footer -->
+  <script>
+    document.getElementById("current-year").innerHTML = new Date().getFullYear();
+  </script>
 </html>

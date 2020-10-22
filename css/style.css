@@ -1,0 +1,184 @@
+/* Design System */
+/* Imports */
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Source+Sans+Pro:wght@300;400;600;700&display=swap');
+/* ^Montserrat and Source Sans Pro */
+
+/* Colours */
+/* - Fonts */
+.colours {
+  color: #F4F4F4; /* Main Fonts */
+  color: #FAD900; /* Secondary Fonts */
+  color: #141518; /* Main Background */
+}
+
+/* - Additional Colours */
+.colours--additional {
+  color: #FAD900; /* Some Bottom Borders */
+  color: #18191D; /* 1st Bcg Support (Darkest) */
+  color: #2A2C31; /* 2nd Bcg Support (Darker) */
+  color: #484C56; /* 3nd Bcg Support (Dark) */
+}
+
+/* Button */
+.button-wrap {
+  max-width: 200px;
+  padding: 1rem;
+  position: relative;
+  background: linear-gradient(#FFC837, #FF8008);
+  padding: 3px;
+}
+
+.button {
+  background: #222;
+  color: #F4F4F4;
+  padding: 2rem;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 140%;
+  /* identical to box height, or 20px */
+  text-align: center;
+  letter-spacing: 0.02em;
+}
+
+/* Native Styles */
+
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background: #141518;
+}
+
+nav {
+  min-height: 180px;
+  width: 90%;
+}
+
+footer {
+  width: 100%;
+  min-height: 300px;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  border-bottom: 20px solid #FAD900;
+}
+
+img {
+  max-width: 100%;
+}
+
+p {
+  /* Description style */
+  margin: 0;
+  font-family: Source Sans Pro;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 140%;
+  /* or 22px */
+  letter-spacing: 0.02em;
+  color: #F4F4F4;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+ul > li {
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  /* Main Section Headings, like ABOUT US, OFFER */
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 75px;
+  line-height: 91px;
+  color: #DDDDDD;
+}
+
+h3 {
+  /* Mainly Headings of sub-sections */
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 29px;
+  letter-spacing: 0.125em; 
+  color: #F4F4F4;
+}
+
+h4 {
+  /* Nav Headings */
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 24px;
+  letter-spacing: 0.1em;
+  color: #F4F4F4;
+}
+
+h5 {
+  /* Headings in Footer */
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 22px;
+  letter-spacing: 0.1em;
+  color: #F4F4F4;
+}
+
+h6 {
+  font-family: Source Sans Pro;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: 0.125em;
+  color: #F4F4F4;
+}
+
+.p--rodo {
+  font-family: Source Sans Pro;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 180%;
+  letter-spacing: 0.02em;
+  color: #F4F4F4;
+}
+
+.p--footer {
+  font-family: Source Sans Pro;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 18px;
+  letter-spacing: 0.1em;
+  color: #F4F4F4;
+}
+
+/* Styling */
+
+.nav-items {
+  font-family: Source Sans Pro;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 50px;
+  letter-spacing: 0.075em;
+  color: #F4F4F4;
+}
+
+/* Media */
