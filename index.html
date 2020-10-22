@@ -12,20 +12,45 @@
 
   <body>
 
-    <header>
-      <h1>Header</h1>
-    </header>
+    <nav> <!-- NavBar -->
+      <div class="nav--callus"> 
+        <h4>ZADZWOŃ DO NAS</h4>
+      </div>
+      <div class="nav--menu-switcher">
+        <figure>
+          <img>
+        </figure>
+        <h4>MENU</h4>
+      </div>
+    </nav><!-- End of NavBar -->
 
-    <nav> 
-      <ul>
-        <li><a href="../index.html">HOME</a></li>
-        <li><a href="../about-us.html">O NAS</a></li>
-        <li><a href="../offer.html">OFERTA</a></li>
-        <li><a href="../contact.html">KONTAKT</a></li>
-      </ul>
-    </nav>
+    <section class="menu"> <!-- Full Window Menu -->
+      <div class="menu--content">
+        <h1>MENU</h1>
+        <ul>
+          <li><a href="../index.html">HOME</a></li>
+          <li><a href="../about-us.html">O NAS</a></li>
+          <li><a href="../offer.html">OFERTA</a></li>
+          <li><a href="../contact.html">KONTAKT</a></li>
+        </ul>
+        <div class="nav--callus"> 
+          <h4>ZADZWOŃ DO NAS</h4>
+        </div>
+      </div>
+      <div class="menu--close">
+        <figure>
+          <img>
+        </figure>
+        <p>ZAMKNIJ</p>
+      </div>
+    </section> <!-- End of Full Window Menu -->
 
     <main>
+
+      <header>
+        <h1>Header</h1>
+      </header>
+
 
     </main>
 
@@ -36,7 +61,7 @@
       </figure>
       <div class="footer--copyright">
         <p>&copy; <span id="current-year"></span> Mila Logistics. Wszelkie prawa zastrzeżone.</p>
-        <p>&copy; Made with <span class="span--love">love</span> by <a href="https://jakubkowalski.dev" target="_blank">jakubkowalski.dev</a></p>
+        <p>&copy; Made with <span class="footer--span__pink">love</span> by <a href="https://jakubkowalski.dev" target="_blank">jakubkowalski.dev</a></p>
       </div>
       <div class="footer--contact">
         <h5>SKONTAKTUJ SIĘ</h5>
@@ -54,7 +79,7 @@
       </div>
     </footer> <!-- End of Footer -->
 
-  </body>
+  </body> <!-- End of BODY -->
   <script>
     document.getElementById("current-year").innerHTML = new Date().getFullYear();
   </script>
