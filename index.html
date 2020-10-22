@@ -11,29 +11,51 @@
   </head>
 
   <body>
-    <!-- Here is our main header that is used across all the pages of our website -->
 
     <header>
       <h1>Header</h1>
     </header>
 
-    <nav>
+    <nav> 
       <ul>
-        <li><a href="#">Home</a></li>
-        <li><a href="#">O nas</a></li>
-        <li><a href="#">Oferta</a></li>
-        <li><a href="#">Kontakt</a></li>
+        <li><a href="../index.html">HOME</a></li>
+        <li><a href="../about-us.html">O NAS</a></li>
+        <li><a href="../offer.html">OFERTA</a></li>
+        <li><a href="../contact.html">KONTAKT</a></li>
       </ul>
-     </nav>
+    </nav>
 
     <main>
 
     </main>
 
 
-    <footer>
-      <p>&copy;Copyright.</p>
-    </footer>
+    <footer> <!-- Footer -->
+      <figure class="footer--logotype">
+        <img>
+      </figure>
+      <div class="footer--copyright">
+        <p>&copy; <span id="current-year"></span> Mila Logistics. Wszelkie prawa zastrzeżone.</p>
+        <p>&copy; Made with <span class="span--love">love</span> by <a href="https://jakubkowalski.dev" target="_blank">jakubkowalski.dev</a></p>
+      </div>
+      <div class="footer--contact">
+        <h5>SKONTAKTUJ SIĘ</h5>
+        <p><a href="callto:+48000000000">Tel: +48 000 000 000</a></p>
+        <p><a href="mailto:kontakt@milalogistics.pl">E-mail: kontakt@milalogistics.pl</a></p>
+      </div>
+      <div class="footer--quick-nav">
+        <h5>NAWIGACJA</h5>
+        <ul>
+          <li><a href="../index.html">HOME</a></li>
+          <li><a href="../about-us.html">O NAS</a></li>
+          <li><a href="../offer.html">OFERTA</a></li>
+          <li><a href="../contact.html">KONTAKT</a></li>
+        </ul>
+      </div>
+    </footer> <!-- End of Footer -->
 
   </body>
+  <script>
+    document.getElementById("current-year").innerHTML = new Date().getFullYear();
+  </script>
 </html>

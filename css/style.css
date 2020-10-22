@@ -42,3 +42,114 @@
   text-align: center;
   letter-spacing: 0.02em;
 }
+
+/* Native Styles */
+
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  background: #141518;
+}
+
+img {
+  max-width: 100%;
+}
+
+p {
+  /* Description style */
+  margin: 0;
+  font-family: Source Sans Pro;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 140%;
+  /* or 22px */
+  letter-spacing: 0.02em;
+  color: #F4F4F4;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+ul > li {
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  /* Main Section Headings, like ABOUT US, OFFER */
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 75px;
+  line-height: 91px;
+  color: #DDDDDD;
+}
+
+h3 {
+  /* Mainly Headings of sub-sections */
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 29px;
+  letter-spacing: 0.125em; 
+  color: #F4F4F4;
+}
+
+h5 {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 22px;
+  letter-spacing: 0.1em;
+  color: #F4F4F4;
+}
+
+h6 {
+  font-family: Source Sans Pro;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: 0.125em;
+  color: #F4F4F4;
+}
+
+.p--rodo {
+  font-family: Source Sans Pro;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 180%;
+  letter-spacing: 0.02em;
+  color: #F4F4F4;
+}
+
+.p--footer {
+  font-family: Source Sans Pro;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 18px;
+  letter-spacing: 0.1em;
+  color: #F4F4F4;
+}
+
+/* Styling */
+
+.nav-item {
+  font-family: Source Sans Pro;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 50px;
+  letter-spacing: 0.075em;
+  color: #F4F4F4;
+}
+
+/* Media */
