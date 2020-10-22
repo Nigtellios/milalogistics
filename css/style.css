@@ -1,0 +1,44 @@
+/* Design System */
+/* Imports */
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Source+Sans+Pro:wght@300;400;600;700&display=swap');
+/* ^Montserrat and Source Sans Pro */
+
+/* Colours */
+/* - Fonts */
+.colours {
+  color: #F4F4F4; /* Main Fonts */
+  color: #FAD900; /* Secondary Fonts */
+  color: #141518; /* Main Background */
+}
+
+/* - Additional Colours */
+.colours--additional {
+  color: #FAD900; /* Some Bottom Borders */
+  color: #18191D; /* 1st Bcg Support (Darkest) */
+  color: #2A2C31; /* 2nd Bcg Support (Darker) */
+  color: #484C56; /* 3nd Bcg Support (Dark) */
+}
+
+/* Button */
+.button-wrap {
+  max-width: 200px;
+  padding: 1rem;
+  position: relative;
+  background: linear-gradient(#FFC837, #FF8008);
+  padding: 3px;
+}
+
+.button {
+  background: #222;
+  color: #F4F4F4;
+  padding: 2rem;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 140%;
+  /* identical to box height, or 20px */
+  text-align: center;
+  letter-spacing: 0.02em;
+}
