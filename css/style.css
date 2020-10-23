@@ -18,6 +18,7 @@
   color: #18191D; /* 1st Bcg Support (Darkest) */
   color: #2A2C31; /* 2nd Bcg Support (Darker) */
   color: #484C56; /* 3nd Bcg Support (Dark) */
+  color: #EB5757; /* red colour */
 }
 
 /* Button */
@@ -62,10 +63,6 @@ nav {
 
 footer {
   width: 100%;
-  min-height: 300px;
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: space-between;
   border-bottom: 20px solid #FAD900;
 }
 
@@ -178,8 +175,8 @@ a:hover {
   padding: 75px 0 75px 0;
 }
 
-.w-90 {
-  max-width: 90%;
+.w-85 {
+  max-width: 85%;
 }
 
 /* Styling */
@@ -260,6 +257,27 @@ a:hover {
 
 .menu__active {
   display: block;
+}
+
+.footer--wrapper{
+  min-height: 300px;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto 0 auto;
+}
+
+.footer--copyright {
+  margin: 0 250px 0 0;
+}
+
+.footer--contact {
+  margin: -50px 0 0 250px;
+}
+
+.footer--quick-nav {
+  margin: -25px 0 0 100px;
 }
 
 /* Media */
