@@ -98,6 +98,7 @@ ul > li {
 
 h1 {
   /* Main Section Headings, like ABOUT US, OFFER */
+  margin: 0;
   font-family: Montserrat;
   font-style: normal;
   font-weight: bold;
@@ -108,6 +109,7 @@ h1 {
 
 h3 {
   /* Mainly Headings of sub-sections */
+  margin: 0;
   font-family: Montserrat;
   font-style: normal;
   font-weight: bold;
@@ -119,6 +121,7 @@ h3 {
 
 h4 {
   /* Nav Headings */
+  margin: 0;
   font-family: Montserrat;
   font-style: normal;
   font-weight: bold;
@@ -130,6 +133,7 @@ h4 {
 
 h5 {
   /* Headings in Footer */
+  margin: 0;
   font-family: Montserrat;
   font-style: normal;
   font-weight: bold;
@@ -140,6 +144,7 @@ h5 {
 }
 
 h6 {
+  margin: 0;
   font-family: Source Sans Pro;
   font-style: normal;
   font-weight: bold;
@@ -148,6 +153,36 @@ h6 {
   letter-spacing: 0.125em;
   color: #F4F4F4;
 }
+
+figure {
+  margin: 0;
+}
+
+i {
+  margin: 0 10px 0 0;
+}
+
+a {
+  color: #F4F4F4;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #FAD900;
+  transition: 0.2s ease-in;
+}
+
+/* Margin/Padding Class Control */
+
+.p-75 {
+  padding: 75px 0 75px 0;
+}
+
+.w-90 {
+  max-width: 90%;
+}
+
+/* Styling */
 
 .p--rodo {
   font-family: Source Sans Pro;
@@ -169,7 +204,30 @@ h6 {
   color: #F4F4F4;
 }
 
-/* Styling */
+.underline__left::after {
+  content: "";
+  width: 50px;
+  height: 5px;
+  position: absolute;
+  background: #FAD900;
+}
+
+.underline__right::after {
+  content: "";
+  width: 50px;
+  height: 5px;
+  position: absolute;
+  background: #FAD900;
+}
+
+.navbar {
+  z-index: 1;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between ;
+  width: 100%;
+  margin: 0 auto 0 auto;
+}
 
 .nav-items {
   font-family: Source Sans Pro;
@@ -179,6 +237,29 @@ h6 {
   line-height: 50px;
   letter-spacing: 0.075em;
   color: #F4F4F4;
+}
+
+.nav--callus {
+  display: flex;
+  flex-flow: row nowrap;
+}
+
+.nav--menu-switcher {
+  display: flex;
+  flex-flow: row nowrap;
+}
+
+.menu {
+  display: flex;
+  flex-flow: column nowrap;
+}
+
+.menu__unactive {
+  display: none;
+}
+
+.menu__active {
+  display: block;
 }
 
 /* Media */
