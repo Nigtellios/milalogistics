@@ -13,7 +13,7 @@
 }
 
 /* - Additional Colours */
-.colours--additional {
+.colours__additional {
   color: #FAD900; /* Some Bottom Borders */
   color: #18191D; /* 1st Bcg Support (Darkest) */
   color: #2A2C31; /* 2nd Bcg Support (Darker) */
@@ -194,14 +194,22 @@ a:hover {
 .p--footer {
   font-family: Source Sans Pro;
   font-style: normal;
-  font-weight: bold;
-  font-size: 14px;
+  font-weight: normal;
+  font-size: 16px;
   line-height: 18px;
   letter-spacing: 0.1em;
   color: #F4F4F4;
 }
 
-.underline__left::after {
+.mini-nav {
+  list-style: none;
+}
+
+.mini-nav > li {
+  padding: 3px 0 3px 0;
+}
+
+.underline--left::after {
   content: "";
   width: 50px;
   height: 5px;
@@ -209,13 +217,33 @@ a:hover {
   background: #FAD900;
 }
 
-.underline__right::after {
+.underline--right::after {
   content: "";
   width: 50px;
   height: 5px;
   position: absolute;
   background: #FAD900;
 }
+
+.underline--right-footer::after {
+  content: "";
+  width: 43px;
+  height: 5px;
+  position: absolute;
+  margin: 30px 50px 0 -135px;
+  background: #FAD900;
+}
+
+.underline--right-footer-contact::after {
+  content: "";
+  width: 43px;
+  height: 5px;
+  position: absolute;
+  margin: 30px 50px 0 -185px;
+  background: #FAD900;
+}
+
+/* Nav Styles */
 
 .navbar {
   z-index: 1;
@@ -236,12 +264,12 @@ a:hover {
   color: #F4F4F4;
 }
 
-.nav--callus {
+.nav__callus {
   display: flex;
   flex-flow: row nowrap;
 }
 
-.nav--menu-switcher {
+.nav__menu-switcher {
   display: flex;
   flex-flow: row nowrap;
 }
@@ -259,7 +287,13 @@ a:hover {
   display: block;
 }
 
-.footer--wrapper{
+/* Main/Sections Styles*/
+
+
+
+/* Footer Styles */
+
+.footer__wrapper{
   min-height: 300px;
   display: flex;
   flex-flow: row wrap;
@@ -268,16 +302,28 @@ a:hover {
   margin: 0 auto 0 auto;
 }
 
-.footer--copyright {
-  margin: 0 250px 0 0;
+.footer__copyright {
+  margin: 0 20% 0 0;
 }
 
-.footer--contact {
-  margin: -50px 0 0 250px;
+.footer__contact {
+  margin: -45px 0 0 15%;
 }
 
-.footer--quick-nav {
-  margin: -25px 0 0 100px;
+.footer__quick-nav {
+  margin: 0 0 0 100px;
+}
+
+.footer__contact > h5 {
+  margin-bottom: 32px;
+}
+
+.footer__quick-nav > h5 {
+  margin-bottom: 32px;
+}
+
+.footer--span {
+  color: #EB5757;
 }
 
 /* Media */
