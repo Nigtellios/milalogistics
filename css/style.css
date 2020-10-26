@@ -169,9 +169,7 @@ a:hover {
   transition: 0.2s ease-in;
 }
 
-main {
-  margin: 250px 0 0 0;
-}
+/* there was main lol */
 
 /* Margin/Padding Class Control */
 
@@ -316,7 +314,47 @@ main {
 
 /* Main/Sections Styles*/
 
+.wrapper {
+  margin-left: auto;
+  margin-right: auto;
+}
 
+.container-hero {
+  display: flex;
+  flex-flow: column nowrap;
+  padding: 250px 0 0 0;
+  background-image: url("../media/hero-background.png");
+}
+
+.hero__logotype {
+  z-index: 0;
+}
+
+.hero__logotype::before {
+  content: "";
+  width: 150px;
+  height: 150px;
+  position: absolute;
+  left: 0;
+  right: -430px;
+  margin: -25px auto 0 auto;
+  border: 20px dashed #484C56;
+  background: rgba(0,0,0, 0.0);
+  z-index: -1;
+}
+
+.hero__logotype::after {
+  content: "";
+  position: absolute;
+  width: 240px;
+  height: 240px;
+  left: 0;
+  right: -430px;
+  margin: -70px auto 0 auto;
+  border: 20px dashed #2A2C31;
+  background: rgba(0,0,0, 0.0);
+  z-index: -2;
+}
 
 /* Footer Styles */
 
