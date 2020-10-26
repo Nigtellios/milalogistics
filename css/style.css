@@ -57,7 +57,7 @@ body {
 }
 
 nav {
-  min-height: 180px;
+  min-height: 100px;
   width: 90%;
 }
 
@@ -169,10 +169,14 @@ a:hover {
   transition: 0.2s ease-in;
 }
 
+main {
+  margin: 250px 0 0 0;
+}
+
 /* Margin/Padding Class Control */
 
-.p-75 {
-  padding: 75px 0 75px 0;
+.m-75 {
+  margin: 75px 0 75px 0;
 }
 
 .w-85 {
@@ -214,7 +218,7 @@ a:hover {
   width: 50px;
   height: 5px;
   position: absolute;
-  background: #FAD900;
+  background: #FFC837;
 }
 
 .underline--right::after {
@@ -222,7 +226,7 @@ a:hover {
   width: 50px;
   height: 5px;
   position: absolute;
-  background: #FAD900;
+  background: #FFC837;
 }
 
 .underline--right-footer::after {
@@ -231,7 +235,7 @@ a:hover {
   height: 5px;
   position: absolute;
   margin: 30px 50px 0 -135px;
-  background: #FAD900;
+  background: #FFC837;
 }
 
 .underline--right-footer-contact::after {
@@ -240,18 +244,41 @@ a:hover {
   height: 5px;
   position: absolute;
   margin: 30px 50px 0 -185px;
-  background: #FAD900;
+  background: #FFC837;
+}
+
+.underline--right-nav::after {
+  content: "";
+  width: 50px;
+  height: 5px;
+  position: absolute;
+  margin: 30px 50px 0 -50px;
+  background: #FFC837;
+}
+
+.underline--right-nav-menu::after {
+  content: "";
+  width: 20px;
+  height: 5px;
+  position: absolute;
+  margin: 30px 50px 0 -18px;
+  background: #FFC837;
 }
 
 /* Nav Styles */
 
 .navbar {
   z-index: 1;
+  width: 100%;
+  margin: 75px auto 0 auto;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
   display: flex;
   flex-flow: row nowrap;
-  justify-content: space-between ;
-  width: 100%;
-  margin: 0 auto 0 auto;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .nav-items {
@@ -307,11 +334,11 @@ a:hover {
 }
 
 .footer__contact {
-  margin: -45px 0 0 15%;
+  margin: -30px 0 0 15%;
 }
 
 .footer__quick-nav {
-  margin: 0 0 0 100px;
+  margin: 20px 0 0 100px;
 }
 
 .footer__contact > h5 {
