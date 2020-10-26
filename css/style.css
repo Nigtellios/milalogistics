@@ -54,6 +54,7 @@ footer {
 
 img {
   max-width: 100%;
+  height: auto;
 }
 
 p {
@@ -354,6 +355,7 @@ a:hover {
   margin-right: auto;
   display: flex;
   flex-flow: row wrap;
+  justify-content: space-around;
 }
 
 .container-hero {
@@ -363,6 +365,7 @@ a:hover {
   background-image: url("../media/hero-background.png");
   background-position: center;
   background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .hero__logotype {
@@ -440,6 +443,8 @@ a:hover {
   background-image: url("../media/home-aboutus-background.png");
   background-position: center;
   background-repeat: no-repeat;
+  background-size: cover;
+  padding: 100px 0 100px 0;
 }
 
 .about-us__map {
@@ -450,6 +455,10 @@ a:hover {
 .about-us__content-wrap {
   max-width: 445px;
   margin: 0 0 30px 100px;
+}
+
+.about-us__content-wrap > h3 {
+  margin-bottom: 15px;
 }
 
 .heading {
@@ -463,7 +472,56 @@ a:hover {
   display: block;
   text-align: center;
   line-height: 50px;
-  background: #141518;;
+  background: #141518;
+  border: 2px solid #FFC837;
+}
+
+.about-us__content::after {
+  content: "";
+  position: absolute;
+  width: 455px;
+  height: 305px;
+  margin: -450px 0 0 150px;
+  background-image: url("../media/rockets-on-rectangle.svg");
+  background-repeat: no-repeat;
+  z-index: -1;
+}
+
+.map-shadow::before {
+  content: "";
+  position: absolute;
+  width: 880px;
+  height: 80px;
+  margin: 530px 0 0 -930px;
+  background-image: url("../media/map-shadow.svg");
+  background-repeat: no-repeat;
+  z-index: -1;
+}
+
+.elipses::before {
+  content: "";
+  width: 620px;
+  height: 620px;
+  left: 0;
+  margin: 0 0 0 -310px;
+  position: absolute;
+  background-image: url("../media/big-elipse.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  z-index: -1;
+}
+
+.elipses::after {
+  content: "";
+  width: 320px;
+  height: 320px;
+  left: 0;
+  margin: 0 0 0 -160px;
+  position: absolute;
+  background-image: url("../media/small-elipse.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  z-index: -1;
 }
 
 /* Footer Styles */
