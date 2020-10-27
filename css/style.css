@@ -466,7 +466,7 @@ a:hover {
 }
 
 .button {
-  width: 200px;
+  max-width: 250px;
   height: 50px;
   margin: 40px 0 40px 0;
   display: block;
