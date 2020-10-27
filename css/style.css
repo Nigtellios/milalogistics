@@ -292,6 +292,15 @@ a:hover {
   background: #FFC837;
 }
 
+.underline--left-section-offer::after {
+  content: "";
+  width: 110px;
+  height: 12px;
+  position: absolute;
+  margin: 95px 0 0 -315px;
+  background: #FFC837;
+}
+
 /* Nav Styles */
 
 .navbar {
@@ -521,6 +530,71 @@ a:hover {
   background-image: url("../media/small-elipse.svg");
   background-repeat: no-repeat;
   background-position: center;
+  z-index: -1;
+}
+
+.container-offer {
+  background-image: url("../media/home-offer-background.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.offer__content > h3 {
+  margin: 45px 0 45px 0;
+}
+
+.offer__tiles-wrapper {
+  max-width: 550px;
+  min-height: 550px;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+}
+
+.offer__tile {
+  display: block;
+  max-width: 205px;
+  max-height: 180px;
+  padding: 10px;
+  margin: 20px 0 0 0;
+  border: 3px solid #484C56;
+  border-radius: 10px;
+}
+
+.offer__tile:nth-child(even) {
+  margin: 60px 0 0 30px;
+}
+
+.offer__tile-icon {
+  position: absolute;
+  margin: -45px 0 0 -45px;
+  padding: 10px;
+  background-color: #141518;
+}
+
+.offer__tile > h6 {
+  text-align: center;
+  margin: 15px 0 0 0;
+}
+
+.offer__tile > p {
+  margin: 20px 15px 15px 15px;
+}
+
+.offer__content-desc {
+  max-width: 485px;
+  margin: 40px 0 40px 0;
+}
+
+.offer__content::after {
+  content: "";
+  position: absolute;
+  width: 640px;
+  height: 400px;
+  margin: -800px 0 0 -50px;
+  background-image: url("../media/home-offer-rockets.svg");
+  background-repeat: no-repeat;
   z-index: -1;
 }
 
