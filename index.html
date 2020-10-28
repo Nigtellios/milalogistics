@@ -151,7 +151,38 @@
       <section class="container-contact">
         <div class="wrapper wrapper__home-contact w-85">
           <div class="contact__form">
-
+            <div class="contact__form-heading">
+              <h1 class="underline--left-section-offer heading">KONTAKT</h1>
+            </div>
+            <form class="contact__form-styling"> <!-- Contact Form -->
+              <div>
+                <label for="name">
+                  <input type="text" id="name" name="user_name" placeholder="Imię">
+                  <abbr title="required" aria-label="required"></abbr>
+                </label>
+                <label for="surname">
+                  <input type="text" id="surname" name="user_surname" placeholder="Nazwisko">
+                </label>
+              </div>
+              <div>
+                <label for="mail">
+                  <input type="mail" id="mail" name="user_mail" placeholder="Adres e-mail">
+                  <abbr title="required" aria-label="required"></abbr>
+                </label>
+              </div>
+              <div>
+                <label for="message">
+                  <input type="text" id="message" name="user_message" placeholder="Wiadomość">
+                </label>
+              </div>
+              <div>
+                <input type="checkbox" id="rodo1" name="rodo" value="">
+                <label for="rodo">Zgadzam się na przetwarzanie moich danych osobowych zgodnie z <strong>polityką prywatności.</strong></label>
+              </div>
+              <div>
+                <input type="button" value="WYŚLIJ" class="button">
+              </div>
+            </form> <!-- End of Contact Form -->
           </div>
         </div>
       </section>

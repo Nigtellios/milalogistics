@@ -708,7 +708,32 @@ a:hover {
 }
 
 .wrapper__home-contact {
+  display: flex;
   justify-content: flex-end;
+}
+
+.container-contact {
+  margin: 100px 0 0 0;
+  padding: 100px 0 0 0;
+  background-image: url("../media/truckroad.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.contact__form {
+  padding: 0 0 350px 0;
+}
+
+.contact__form-heading {
+  margin: 0 0 80px 0;
+}
+
+input[type=text], input[type=mail] {
+  background: none;
+  border: none;
+  border-bottom: 2px solid #FFC837;
+  max-width: 100%;
 }
 
 /* Footer Styles */
