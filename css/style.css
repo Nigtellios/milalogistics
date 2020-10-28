@@ -9,6 +9,7 @@
 .colours {
   color: #F4F4F4; /* Main Fonts */
   color: #FAD900; /* Secondary Fonts */
+  color: #FFC837; /* Second Orange */
   color: #141518; /* Main Background */
 }
 
@@ -40,6 +41,7 @@ body {
   flex-direction: column;
   justify-content: center;
   background: #141518;
+  overflow-x: hidden;
 }
 
 nav {
@@ -203,6 +205,17 @@ a:hover {
   text-align: center;
   letter-spacing: 0.02em;
   color: #F4F4F4;
+  padding: 0 20px 0 20px;
+}
+
+.button-wrap {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.button-wrap--rev {
+  display: flex;
+  justify-content: flex-end;
 }
 
 .mini-nav {
@@ -554,12 +567,49 @@ a:hover {
 
 .offer__tile {
   display: block;
+  position: relative;
   max-width: 205px;
   max-height: 180px;
   padding: 10px;
   margin: 20px 0 0 0;
-  border: 3px solid #484C56;
-  border-radius: 10px;
+}
+
+.offer__tile::before {
+  content: '';
+  position: absolute;
+  top: 60px;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+  border: solid 3px #484C56;
+  border-top: none;
+  border-radius: 0 0 10px 10px;
+}
+
+.offer__tile::after {
+  content: '';
+  position: absolute;
+  top: 0px;
+  left: 60px;
+  right: 0px;
+  bottom: 60px;
+  border: solid 3px #484C56;
+  border-left: none;
+  border-bottom: none;
+  border-radius: 0 10px 0 0;
+}
+
+.offer__tile:hover:before {
+  transition: 0.2s ease-in;
+  border-bottom: solid 3px  #FFC837;
+  border-left: solid 3px  #FFC837;
+  border-right: solid 3px  #FFC837;
+}
+
+.offer__tile:hover:after {
+  transition: 0.2s ease-in;
+  border-top: solid 3px  #FFC837;
+  border-right: solid 3px  #FFC837;
 }
 
 .offer__tile:nth-child(even) {
@@ -568,9 +618,12 @@ a:hover {
 
 .offer__tile-icon {
   position: absolute;
-  margin: -45px 0 0 -45px;
+  margin: -40px 0 0 -40px;
   padding: 10px;
-  background-color: #141518;
+}
+
+.offer__tile-icon > img:hover {
+  fill: #FFC837;
 }
 
 .offer__tile > h6 {
@@ -591,11 +644,71 @@ a:hover {
   content: "";
   position: absolute;
   width: 640px;
-  height: 400px;
-  margin: -800px 0 0 -50px;
+  height: 420px;
+  margin: -930px 0 0 -50px;
   background-image: url("../media/home-offer-rockets.svg");
   background-repeat: no-repeat;
   z-index: -1;
+}
+
+.offer__heading > h1{
+  margin: 50px 200px 0 0;
+}
+
+.offer__heading::before {
+  content: "";
+  width: 300px;
+  height: 100px;
+  position: absolute;
+  left: 0;
+  right: -45%;
+  margin: 390px auto 0 auto;
+  border: 20px dashed #484C56;
+  background: rgba(0,0,0, 0.0);
+  z-index: -1;
+}
+
+.offer__heading::after {
+  content: "";
+  position: absolute;
+  width: 400px;
+  height: 200px;
+  left: 0;
+  right: -45%;
+  margin: 200px auto 0 auto;
+  border: 20px dashed #2A2C31;
+  background: rgba(0,0,0, 0.0);
+  z-index: -2;
+} 
+
+.triangles::before {
+  content: "";
+  width: 465px;
+  height: 895px;
+  right: 0;
+  margin: -180px -20px 0 0;
+  position: absolute;
+  background-image: url("../media/big-triangle.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  z-index: -1;
+}
+
+.triangles::after {
+  content: "";
+  width: 235px;
+  height: 475px;
+  right: 0;
+  margin: 28px -40px 0 0;
+  position: absolute;
+  background-image: url("../media/small-triangle.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  z-index: -1;
+}
+
+.wrapper__home-contact {
+  justify-content: flex-end;
 }
 
 /* Footer Styles */
