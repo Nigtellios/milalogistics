@@ -9,6 +9,7 @@
 .colours {
   color: #F4F4F4; /* Main Fonts */
   color: #FAD900; /* Secondary Fonts */
+  color: #FFC837; /* Second Orange */
   color: #141518; /* Main Background */
 }
 
@@ -40,6 +41,7 @@ body {
   flex-direction: column;
   justify-content: center;
   background: #141518;
+  overflow-x: hidden;
 }
 
 nav {
@@ -203,6 +205,17 @@ a:hover {
   text-align: center;
   letter-spacing: 0.02em;
   color: #F4F4F4;
+  padding: 0 20px 0 20px;
+}
+
+.button-wrap {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.button-wrap--rev {
+  display: flex;
+  justify-content: flex-end;
 }
 
 .mini-nav {
@@ -289,6 +302,15 @@ a:hover {
   height: 12px;
   position: absolute;
   margin: 95px 0 0 -247px;
+  background: #FFC837;
+}
+
+.underline--left-section-offer::after {
+  content: "";
+  width: 110px;
+  height: 12px;
+  position: absolute;
+  margin: 95px 0 0 -315px;
   background: #FFC837;
 }
 
@@ -466,7 +488,7 @@ a:hover {
 }
 
 .button {
-  width: 200px;
+  max-width: 250px;
   height: 50px;
   margin: 40px 0 40px 0;
   display: block;
@@ -522,6 +544,196 @@ a:hover {
   background-repeat: no-repeat;
   background-position: center;
   z-index: -1;
+}
+
+.container-offer {
+  background-image: url("../media/home-offer-background.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.offer__content > h3 {
+  margin: 45px 0 45px 0;
+}
+
+.offer__tiles-wrapper {
+  max-width: 550px;
+  min-height: 550px;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+}
+
+.offer__tile {
+  display: block;
+  position: relative;
+  max-width: 205px;
+  max-height: 180px;
+  padding: 10px;
+  margin: 20px 0 0 0;
+}
+
+.offer__tile::before {
+  content: '';
+  position: absolute;
+  top: 60px;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+  border: solid 3px #484C56;
+  border-top: none;
+  border-radius: 0 0 10px 10px;
+}
+
+.offer__tile::after {
+  content: '';
+  position: absolute;
+  top: 0px;
+  left: 60px;
+  right: 0px;
+  bottom: 60px;
+  border: solid 3px #484C56;
+  border-left: none;
+  border-bottom: none;
+  border-radius: 0 10px 0 0;
+}
+
+.offer__tile:hover:before {
+  transition: 0.2s ease-in;
+  border-bottom: solid 3px  #FFC837;
+  border-left: solid 3px  #FFC837;
+  border-right: solid 3px  #FFC837;
+}
+
+.offer__tile:hover:after {
+  transition: 0.2s ease-in;
+  border-top: solid 3px  #FFC837;
+  border-right: solid 3px  #FFC837;
+}
+
+.offer__tile:nth-child(even) {
+  margin: 60px 0 0 30px;
+}
+
+.offer__tile-icon {
+  position: absolute;
+  margin: -40px 0 0 -40px;
+  padding: 10px;
+}
+
+.offer__tile-icon > img:hover {
+  fill: #FFC837;
+}
+
+.offer__tile > h6 {
+  text-align: center;
+  margin: 15px 0 0 0;
+}
+
+.offer__tile > p {
+  margin: 20px 15px 15px 15px;
+}
+
+.offer__content-desc {
+  max-width: 485px;
+  margin: 40px 0 40px 0;
+}
+
+.offer__content::after {
+  content: "";
+  position: absolute;
+  width: 640px;
+  height: 420px;
+  margin: -930px 0 0 -50px;
+  background-image: url("../media/home-offer-rockets.svg");
+  background-repeat: no-repeat;
+  z-index: -1;
+}
+
+.offer__heading > h1{
+  margin: 50px 200px 0 0;
+}
+
+.offer__heading::before {
+  content: "";
+  width: 300px;
+  height: 100px;
+  position: absolute;
+  left: 0;
+  right: -45%;
+  margin: 390px auto 0 auto;
+  border: 20px dashed #484C56;
+  background: rgba(0,0,0, 0.0);
+  z-index: -1;
+}
+
+.offer__heading::after {
+  content: "";
+  position: absolute;
+  width: 400px;
+  height: 200px;
+  left: 0;
+  right: -45%;
+  margin: 200px auto 0 auto;
+  border: 20px dashed #2A2C31;
+  background: rgba(0,0,0, 0.0);
+  z-index: -2;
+} 
+
+.triangles::before {
+  content: "";
+  width: 465px;
+  height: 895px;
+  right: 0;
+  margin: -180px -20px 0 0;
+  position: absolute;
+  background-image: url("../media/big-triangle.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  z-index: -1;
+}
+
+.triangles::after {
+  content: "";
+  width: 235px;
+  height: 475px;
+  right: 0;
+  margin: 28px -40px 0 0;
+  position: absolute;
+  background-image: url("../media/small-triangle.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  z-index: -1;
+}
+
+.wrapper__home-contact {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.container-contact {
+  margin: 100px 0 0 0;
+  padding: 100px 0 0 0;
+  background-image: url("../media/truckroad.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.contact__form {
+  padding: 0 0 350px 0;
+}
+
+.contact__form-heading {
+  margin: 0 0 80px 0;
+}
+
+input[type=text], input[type=mail] {
+  background: none;
+  border: none;
+  border-bottom: 2px solid #FFC837;
+  max-width: 100%;
 }
 
 /* Footer Styles */
