@@ -1,12 +1,12 @@
 <!DOCTYPE html>
-<html>
+<html lang="pl_PL">
   <head>
     <meta charset="utf-8">
 
     <title>Mila Logistics</title>
     <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300|Sonsie+One" rel="stylesheet" type="text/css">
-    <link rel="stylesheet" href="../css/style.css" type="text/css">
-    <script type="text/javascript" src="../js/script.js"></script>
+    <link rel="stylesheet" href="/css/style.css" type="text/css">
+    <script type="text/javascript" src="/js/script.js"></script>
 
   </head>
 
@@ -14,11 +14,11 @@
 
     <nav class="navbar w-85"> <!-- NavBar -->
       <div class="nav__callus">
-        <i><img src="../media/phone-icon.svg" width="27px" height="27px" alt="Otwórz menu"></i>
+        <i><img src="/media/phone-icon.svg" width="27px" height="27px" alt="Otwórz menu"></i>
         <h4 class="underline--right-nav"><a href="tel:+48000000000">ZADZWOŃ DO NAS</a></h4>
       </div>
       <div class="nav__menu-switcher">
-        <i><img src="../media/forwardmenu-icon.svg" width="27px" height="27px" alt="Otwórz menu"></i>
+        <i><img src="/media/forwardmenu-icon.svg" width="27px" height="27px" alt="Otwórz menu"></i>
         <h4 class="underline--right-nav-menu">MENU</h4>
       </div>
     </nav><!-- End of NavBar -->
@@ -143,7 +143,7 @@
 
           <div class="offer__heading">
             <h1 class="underline--left-section-offer heading">OFERTA</h1>
-            <div class="triangles"></div>
+             <div class="triangles"></div>
           </div>
         </div>
       </section> <!-- End of OFFER Section -->
@@ -155,28 +155,28 @@
               <h1 class="underline--left-section-offer heading">KONTAKT</h1>
             </div>
             <form class="contact__form-styling"> <!-- Contact Form -->
-              <div>
+              <div class="double-label">
                 <label for="name">
-                  <input type="text" id="name" name="user_name" placeholder="Imię">
+                  <input type="text" id="name" name="user_name" placeholder="Imię" class="half-width">
                   <abbr title="required" aria-label="required"></abbr>
                 </label>
                 <label for="surname">
-                  <input type="text" id="surname" name="user_surname" placeholder="Nazwisko">
+                  <input type="text" id="surname" name="user_surname" placeholder="Nazwisko" class="half-width">
                 </label>
               </div>
               <div>
                 <label for="mail">
-                  <input type="mail" id="mail" name="user_mail" placeholder="Adres e-mail">
+                  <input type="mail" id="mail" name="user_mail" placeholder="Adres e-mail" class="full-width">
                   <abbr title="required" aria-label="required"></abbr>
                 </label>
               </div>
               <div>
                 <label for="message">
-                  <input type="text" id="message" name="user_message" placeholder="Wiadomość">
+                  <input type="text" id="message" name="user_message" placeholder="Wiadomość" class="full-width">
                 </label>
               </div>
-              <div>
-                <input type="checkbox" id="rodo1" name="rodo" value="">
+              <div class="form-rodo">
+                <input type="checkbox" id="rodo1" name="rodo" class="form-rodo__checkbox">
                 <label for="rodo">Zgadzam się na przetwarzanie moich danych osobowych zgodnie z <strong>polityką prywatności.</strong></label>
               </div>
               <div>

@@ -42,6 +42,7 @@ body {
   justify-content: center;
   background: #141518;
   overflow-x: hidden;
+  box-sizing: border-box;
 }
 
 nav {
@@ -159,6 +160,11 @@ a:hover {
 }
 
 /* there was main lol */
+
+.container-hero, .container-about-us, .container-offer, .container-contact {
+  width: 100%;
+  box-sizing: border-box;
+}
 
 /* Margin/Padding Class Control */
 
@@ -683,10 +689,10 @@ a:hover {
 
 .triangles::before {
   content: "";
-  width: 465px;
-  height: 895px;
+  width: 435px;
+  height: 892px;
   right: 0;
-  margin: -180px -20px 0 0;
+  margin: -180px 0 0 0;
   position: absolute;
   background-image: url("../media/big-triangle.svg");
   background-repeat: no-repeat;
@@ -696,10 +702,10 @@ a:hover {
 
 .triangles::after {
   content: "";
-  width: 235px;
+  width: 232px;
   height: 475px;
   right: 0;
-  margin: 28px -40px 0 0;
+  margin: 28px 0 0 0;
   position: absolute;
   background-image: url("../media/small-triangle.svg");
   background-repeat: no-repeat;
@@ -719,6 +725,7 @@ a:hover {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  overflow-x: hidden;
 }
 
 .contact__form {
@@ -729,11 +736,88 @@ a:hover {
   margin: 0 0 80px 0;
 }
 
+.contact__form-styling {
+  display: flex;
+  flex-flow: column wrap;
+  max-width: 425px;
+}
+
 input[type=text], input[type=mail] {
   background: none;
   border: none;
   border-bottom: 2px solid #FFC837;
-  max-width: 100%;
+  max-width: 425px;
+  width: 100%;
+  padding: 10px;
+  font-family: Source Sans Pro;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 140%;
+  letter-spacing: 0.05em;
+  color: #F4F4F4;
+}
+
+.full-width {
+  width: 100%;
+}
+
+.double-label {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+}
+
+.half-width {
+  width: 50%;
+}
+
+.form-rodo {
+  padding: 25px 0 0 0;
+  font-family: Source Sans Pro;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 140%;
+  letter-spacing: 0.05em;
+  color: #F4F4F4;
+}
+
+.form-rodo__checkbox {
+  appearance: none;
+  padding: 6px;
+  margin: 0 5px 0 0;
+  border: 1px solid #FFC837;
+  position: relative;
+}
+
+.form-rodo__checkbox:checked:after {
+  content: "x";
+  font-size: 15px;
+  color: #FFC837;
+  text-align: center;
+  line-height: 5px;
+  position: absolute;
+  right: 0.2em;
+  top: 0.1em;
+}
+
+input[type="button"] {
+  width: 200px;
+  height: 50px;
+  margin: 40px 0 40px 0;
+  display: block;
+  text-align: center;
+  line-height: 50px;
+  background: #141518;
+  border: 2px solid #FFC837;
+  font-family: Source Sans Pro;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 140%;
+  letter-spacing: 0.05em;
+  color: #F4F4F4;
 }
 
 /* Footer Styles */
