@@ -298,7 +298,7 @@ a:hover {
   width: 50px;
   height: 5px;
   position: absolute;
-  margin: 35px 0 0 -425px;
+  margin: 35px 0 0 -420px;
   background: #FFC837;
 }
 
@@ -321,6 +321,10 @@ a:hover {
 }
 
 /* Nav Styles */
+
+.pointer {
+  cursor: pointer;
+}
 
 .navbar {
   z-index: 1;
@@ -357,16 +361,30 @@ a:hover {
 }
 
 .menu {
-  display: flex;
+  display: none;
   flex-flow: column nowrap;
+  justify-items: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  padding: 20% 0 20% 0;
+  background-color: #141518;
+  z-index: 99;
 }
 
-.menu__unactive {
-  display: none;
+.menu__lock-scroll {
+  overflow: hidden;
 }
+
 
 .menu__active {
-  display: block;
+  display: flex;
+}
+
+.menu__close {
+  width: 100%;
+  background-color: #FFC837;
+  cursor: pointer;
 }
 
 /* Main/Sections Styles*/
@@ -713,19 +731,77 @@ a:hover {
   z-index: -1;
 }
 
-.wrapper__home-contact {
-  display: flex;
-  justify-content: flex-end;
-}
-
 .container-contact {
   margin: 100px 0 0 0;
-  padding: 100px 0 0 0;
   background-image: url("../media/truckroad.png");
-  background-position: center;
+  background-position: bottom;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: contain;
   overflow-x: hidden;
+}
+
+/* ####################### */
+/* przy pisaniu RWD ->>>> 
+dodaj tutaj media które ustawiają ją na cover powyżej 1920px B) */
+/* ####################### */
+
+.wrapper__home-contact {
+  display: flex;
+  justify-content: space-around;
+}
+
+.wrapper__home-contact::before {
+  content: "";
+  width: 1576px;
+  height: 385px;
+  right: 0;
+  margin: 395px 0 0 0;
+  position: absolute;
+  background-image: url("../media/home-truck-union.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  z-index: -1;
+} /* tutaj ten duży */
+
+.wrapper__home-contact::after {
+  content: "";
+  width: 479px;
+  height: 319px;
+  right: 0;
+  margin: 275px 0 0 0;
+  position: absolute;
+  background-image: url("../media/home-truck-union-smallhelper.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  z-index: -1;
+} /* tutaj ten mniejszy  */
+
+.triangles-contact::before {
+  content: "";
+  width: 435px;
+  height: 892px;
+  left: 0;
+  margin: 0 0 0 0;
+  position: absolute;
+  transform: scaleX(-1);
+  background-image: url("../media/big-triangle.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  z-index: -1;
+}
+
+.triangles-contact::after {
+  content: "";
+  width: 232px;
+  height: 475px;
+  left: 0;
+  margin: 215px 0 0 0;
+  position: absolute;
+  transform: scaleX(-1);
+  background-image: url("../media/small-triangle.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  z-index: -1;
 }
 
 .contact__form {
