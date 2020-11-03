@@ -400,7 +400,11 @@ a:hover {
 }
 
 .menu {
-  display: none;
+  display: flex;
+  visibility: hidden;
+  position: fixed;
+  bottom: 0;
+  top: 0;
   flex-flow: column nowrap;
   justify-items: center;
   align-items: center;
@@ -423,7 +427,7 @@ a:hover {
 
 
 .menu__active {
-  display: flex;
+  visibility: visible;
 }
 
 .menu__close {
@@ -531,7 +535,7 @@ a:hover {
 .hero__encour {
   width: 100%;
   display: flex;
-  flex-flow: row nowrap;
+  flex-flow: row wrap;
   justify-content: space-between;
   align-items: center;
   margin-bottom: 100px;
@@ -892,13 +896,12 @@ dodaj tutaj media które ustawiają ją na cover powyżej 1920px B) */
   max-width: 425px;
 }
 
-input[type=text], input[type=mail] {
+input[type=text], input[type=mail], textarea {
   background: none;
   border: none;
   border-bottom: 2px solid #FFC837;
-  max-width: 425px;
   width: 100%;
-  padding: 10px;
+  padding: 10px 0 10px 0;
   font-family: Source Sans Pro;
   font-style: normal;
   font-weight: normal;
@@ -908,18 +911,10 @@ input[type=text], input[type=mail] {
   color: #F4F4F4;
 }
 
-.full-width {
-  width: 100%;
-}
-
 .double-label {
   display: flex;
   flex-flow: row nowrap;
   justify-content: space-between;
-}
-
-.half-width {
-  width: 50%;
 }
 
 .form-rodo {
@@ -952,7 +947,7 @@ input[type=text], input[type=mail] {
   top: 0.1em;
 }
 
-input[type="button"] {
+input[type="submit"] {
   width: 200px;
   height: 50px;
   margin: 40px 0 40px 0;
@@ -968,6 +963,32 @@ input[type="button"] {
   line-height: 140%;
   letter-spacing: 0.05em;
   color: #F4F4F4;
+}
+
+.contact__error-box, .contact__send-box {
+  position: absolute;
+  margin: 350px 0 0 0;
+  background-color: #141518;
+  padding: 20px 20px 20px 30px;
+  border-radius: 10px 10px 10px 10px;
+}
+
+.contact__error-box > p:before {
+  content: "";
+  position: absolute;
+  width: 5px;
+  height: 5px;
+  margin: 10px 0 0 -15px;
+  background-color: red;
+}
+
+.contact__send-box > p:before {
+  content: "";
+  position: absolute;
+  width: 5px;
+  height: 5px;
+  margin: 10px 0 0 -15px;
+  background-color: green;
 }
 
 /* Footer Styles */
@@ -1069,4 +1090,99 @@ input[type="button"] {
   margin: 300px 0 0 750px;
 }
 
+.bottom-bar--unactive {
+  display: none !important;
+}
+
+.bottom-bar {
+  position: fixed;
+  bottom: 0;
+  display: none;
+  flex-flow: row nowrap;
+  width: 100%;
+  height: 100px;
+  border-top: 3px solid #FFC837;
+  background-color: #141518;;
+  z-index: 99;
+}
+
+.bottom-bar--unactive {
+  display: none;
+}
+
+.bottom-bar__contact {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.bottom-bar__menu {
+  width: 50%;
+  height: 100%;
+}
+
+.bottom-bar__menu > a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.bottom-bar__contact > a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 /* Media */
+
+/* FHD correction - cover images */
+@media only screen and (max-width: 1920px) {
+
+}
+
+/* Notebooks */
+@media only screen and (max-width: 1200px) {
+
+}
+
+/* Big tablets */
+@media only screen and (max-width: 1024px) {
+  .hero__follow {
+    visibility: hidden;
+  }
+  
+}
+
+/* Phablets/Tablets */
+@media only screen and (max-width: 768px) {
+  .bottom-bar {
+    display: flex;
+  }
+
+  .menu__content > .nav__callus {
+    visibility: hidden;
+  }
+}
+
+/* Phone 6"+ */
+@media only screen and (max-width: 576px) {
+
+}
+
+/* Phone 5"+ */
+@media only screen and (max-width: 480px) {
+
+}
+
+/* Smallest Phone about 5" */
+@media only screen and (max-width: 320px) {
+
+}
