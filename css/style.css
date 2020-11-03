@@ -892,13 +892,12 @@ dodaj tutaj media które ustawiają ją na cover powyżej 1920px B) */
   max-width: 425px;
 }
 
-input[type=text], input[type=mail] {
+input[type=text], input[type=mail], textarea {
   background: none;
   border: none;
   border-bottom: 2px solid #FFC837;
-  max-width: 425px;
   width: 100%;
-  padding: 10px;
+  padding: 10px 0 10px 0;
   font-family: Source Sans Pro;
   font-style: normal;
   font-weight: normal;
@@ -908,18 +907,10 @@ input[type=text], input[type=mail] {
   color: #F4F4F4;
 }
 
-.full-width {
-  width: 100%;
-}
-
 .double-label {
   display: flex;
   flex-flow: row nowrap;
   justify-content: space-between;
-}
-
-.half-width {
-  width: 50%;
 }
 
 .form-rodo {
@@ -952,7 +943,7 @@ input[type=text], input[type=mail] {
   top: 0.1em;
 }
 
-input[type="button"] {
+input[type="submit"] {
   width: 200px;
   height: 50px;
   margin: 40px 0 40px 0;
@@ -968,6 +959,32 @@ input[type="button"] {
   line-height: 140%;
   letter-spacing: 0.05em;
   color: #F4F4F4;
+}
+
+.contact__error-box, .contact__send-box {
+  position: absolute;
+  margin: 350px 0 0 0;
+  background-color: #141518;
+  padding: 20px 20px 20px 30px;
+  border-radius: 10px 10px 10px 10px;
+}
+
+.contact__error-box > p:before {
+  content: "";
+  position: absolute;
+  width: 5px;
+  height: 5px;
+  margin: 10px 0 0 -15px;
+  background-color: red;
+}
+
+.contact__send-box > p:before {
+  content: "";
+  position: absolute;
+  width: 5px;
+  height: 5px;
+  margin: 10px 0 0 -15px;
+  background-color: green;
 }
 
 /* Footer Styles */
