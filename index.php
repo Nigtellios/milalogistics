@@ -1,46 +1,6 @@
-<!DOCTYPE html>
-<html lang="pl_PL">
-  <head>
-    <meta charset="utf-8">
-
-    <title>Mila Logistics</title>
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300|Sonsie+One" rel="stylesheet" type="text/css">
-    <link rel="stylesheet" href="/css/style.css" type="text/css">
-    <script type="text/javascript" src="/js/script.js"></script>
-
-  </head>
-
-  <body>
-
-    <nav class="navbar w-85"> <!-- NavBar -->
-      <div class="nav__callus">
-        <i><img src="/media/phone-icon.svg" width="27px" height="27px" alt="Zadzwoń do nas"></i>
-        <h4 class="underline--right-nav"><a href="tel:+48000000000">ZADZWOŃ DO NAS</a></h4>
-      </div>
-      <div class="nav__menu-switcher">
-        <i><img src="/media/forwardmenu-icon.svg" width="27px" height="27px" alt="Otwórz menu"></i>
-        <h4 class="underline--right-nav-menu"><a onclick="menuToggle();" class="pointer">MENU</a></h4>
-      </div>
-    </nav><!-- End of NavBar -->
-
-    <section class="menu" id="menuToggler"> <!-- Full Window Menu -->
-      <div class="menu__content">
-        <h1>MENU</h1>
-        <ul class="nav-items">
-          <li><a href="../index.html">HOME</a></li>
-          <li><a href="../about-us.html">O NAS</a></li>
-          <li><a href="../offer.html">OFERTA</a></li>
-          <li><a href="../contact.html">KONTAKT</a></li>
-        </ul>
-        <div class="nav__callus"> 
-          <h4>ZADZWOŃ DO NAS</h4>
-        </div>
-      </div>
-      <aside class="menu__close" onclick="menuToggle();">
-        <i><img src="../media/close-icon.svg" width="20px" height="20px" alt="Otwórz menu"></i>
-        <p>ZAMKNIJ</p>
-      </aside>
-    </section> <!-- End of Full Window Menu -->
+<?php
+  include 'header.php';
+?>
 
     <main> <!-- Sections -->
 
@@ -187,35 +147,6 @@
 
     </main> <!-- End of Sections -->
 
-
-    <footer> <!-- Footer -->
-      <div class="footer__wrapper w-85">
-        <figure class="footer__logotype">
-          <a href="../contact.html"><img src="../media/logo-white-footer.svg" width="160" height="105" alt="Logotyp Mila Logistics"></a>
-        </figure>
-        <div class="footer__copyright">
-          <p><strong>&copy; <span id="current-year"></span> Mila Logistics.</strong> Wszelkie prawa zastrzeżone.</p>
-          <p>Made with <span class="footer--span">love</span> by <strong><a href="https://jakubkowalski.dev" target="_blank">jakubkowalski.dev</a></strong></p>
-        </div>
-        <div class="footer__contact">
-          <h5 class="underline--right-footer-contact">SKONTAKTUJ SIĘ</h5>
-          <p><a href="tel:+48000000000">Tel: +48 000 000 000</a></p>
-          <p><a href="mailto:kontakt@milalogistics.pl">E-mail: kontakt@milalogistics.pl</a></p>
-        </div>
-        <div class="footer__quick-nav">
-          <h5 class="underline--right-footer">NAWIGACJA</h5>
-          <ul class="p--footer mini-nav">
-            <li><a href="../index.html">HOME</a></li>
-            <li><a href="../about-us.html">O NAS</a></li>
-            <li><a href="../offer.html">OFERTA</a></li>
-            <li><a href="../contact.html">KONTAKT</a></li>
-          </ul>
-        </div>
-      </div>
-    </footer> <!-- End of Footer -->
-
-  </body> <!-- End of Footer -->
-  <script>
-    document.getElementById("current-year").innerHTML = new Date().getFullYear();
-  </script>
-</html>
+<?php
+  include 'footer.php';
+?>
