@@ -30,9 +30,7 @@
     <!-- ABOUT US Section -->
     <div class="wrapper-2col w-85">
       <div class="about-us__map elipses">
-        <!-- <img src="../media/static-map.png" width="960px" height="465px" alt="Międzynarodowy zasięg usług"> -->
-        <div class="map">
-          <!-- Map -->
+        <div class="map"><!-- Map -->
           <div class="map__markers">
             <img src="/media/map-markers.svg" width="700px" height="330px" alt="">
           </div>
