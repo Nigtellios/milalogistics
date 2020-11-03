@@ -2,12 +2,11 @@
 <html lang="pl_PL">
   <head>
     <meta charset="utf-8">
-
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Mila Logistics</title>
     <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300|Sonsie+One" rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="/css/style.css" type="text/css">
     <script type="text/javascript" src="/js/script.js"></script>
-
   </head>
 
   <body>

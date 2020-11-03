@@ -329,6 +329,15 @@ a:hover {
   background: #FFC837;
 }
 
+.underline--left-section-contact::after {
+  content: "";
+  width: 115px;
+  height: 12px;
+  position: absolute;
+  margin: 95px 0 0 -375px;
+  background: #FFC837;
+}
+
 /* Nav Styles */
 
 .pointer {
@@ -994,6 +1003,70 @@ input[type="button"] {
 
 .footer--span {
   color: #EB5757;
+}
+
+/* Map */
+
+.map {
+  width: 960px;
+  height: 475px;
+  position: relative;
+}
+
+.map__markers {
+  position: absolute;
+  z-index: 9;
+  margin: 50px 0 0 140px;
+  transition: 0.2s linear;
+  pointer-events: none;
+}
+
+.map__north-america {
+  position: absolute;
+  width: 418px;
+  height: 286px;
+}
+
+.map__europe {
+  position: absolute;
+  width: 170px;
+  height: 187px;
+  margin: 20px 0 0 380px;
+}
+
+.map__europe:hover, .map__north-america:hover, .map__asia:hover, .map__south-america:hover, .map__africa:hover, .map__australia:hover  {
+  filter: brightness(0.5);
+  stroke: #FFC837;
+  stroke-width: 10px;
+  transition: 0.2s ease-in;
+}
+
+.map__asia {
+  position: absolute;
+  width: 441px;
+  height: 320px;
+  margin: 14px 0 0 512px;
+}
+
+.map__south-america {
+  position: absolute;
+  width: 125px;
+  height: 201px;
+  margin: 270px 0 0 230px;
+}
+
+.map__africa {
+  position: absolute;
+  width: 181px;
+  height: 203px;
+  margin: 201px 0 0 398px;
+}
+
+.map__australia {
+  position: absolute;
+  width: 176px;
+  height: 137px;
+  margin: 300px 0 0 750px;
 }
 
 /* Media */
