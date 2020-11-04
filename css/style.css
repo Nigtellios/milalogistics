@@ -1151,12 +1151,26 @@ input[type="submit"] {
   justify-content: center;
 }
 
-/* Media */
+/* @@@@@@@@@@@@@@@@@@@@@@@@@@@@*/
+/* @@@@@@@@@@ Media @@@@@@@@@@@*/
+/* @@@@@@@@@@@@@@@@@@@@@@@@@@@@*/
 
 /* FHD correction - cover images */
 
 @media only screen and (min-width: 1920px) {
   /* poprawki do wyświetlania się tła kontenerów w sekcajch */
+  .container-hero {
+    background-size: cover;
+  }
+  .container-about-us{
+    background-size: cover;
+  }
+  .container-offer {
+    background-size: cover;
+  }
+  .container-contact {
+    background-size: cover;
+  }
 }
 
 @media only screen and (max-width: 1920px) {
@@ -1399,6 +1413,18 @@ input[type="submit"] {
   }
   .triangles-contact {
     display: none;
+  }
+  .container-hero {
+    background: none;
+  }
+  .container-about-us{
+    background: none;
+  }
+  .container-offer {
+    background: none;
+  }
+  .container-contact {
+    background: none;
   }
 }
 
