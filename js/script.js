@@ -13,4 +13,3 @@ function mobileToggle() {
   bottomElement.classList.toggle("bottom-bar--unactive");
   document.body.classList.toggle('menu__lock-scroll');
 }
-
