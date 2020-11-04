@@ -50,10 +50,10 @@
 
   <aside class="bottom-bar" id="mobileToggler">
     <div class="bottom-bar__contact">
-      <a href="../contact.php" class="pointer">
+      <a href="tel:+48000000000" class="pointer">
         <div class="nav__callus">
           <i><img src="/media/phone-icon.svg" width="27px" height="27px" alt="Zadzwoń do nas"></i>
-          <h4 class="underline--right-nav">ZADZWOŃ DO NAS</h4>
+          <h4 class="underline--right-nav">ZADZWOŃ</h4>
         </div>
       </a>
     </div>

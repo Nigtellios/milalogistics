@@ -159,6 +159,11 @@ a:hover {
   transition: 0.2s ease-in;
 }
 
+::placeholder { 
+  color: #F4F4F4;
+  opacity: 1; 
+}
+
 /* there was main lol */
 
 .container-hero, .container-about-us, .container-offer, .container-contact {
@@ -1149,6 +1154,11 @@ input[type="submit"] {
 /* Media */
 
 /* FHD correction - cover images */
+
+@media only screen and (min-width: 1920px) {
+  /* poprawki do wyświetlania się tła kontenerów w sekcajch */
+}
+
 @media only screen and (max-width: 1920px) {
   .footer__copyright {
     margin: 0 0 0 0; 
@@ -1247,6 +1257,33 @@ input[type="submit"] {
   .footer__wrapper {
     justify-content: center;
   }
+  .offer__heading::before {
+    display: none;
+  }
+  .offer__heading::after {
+    display: none;
+  }
+  .triangles::before {
+    display: none;
+  }
+  .triangles::after{
+    display: none;
+  }
+  .contact__form {
+    padding: 0 0 200px -80px;
+  }
+  .triangles-contact::before {
+    margin: -150px 0 0 -80px;
+  }
+  .triangles-contact::after {
+    margin: 60px 0 0 -100px;
+  }
+  .wrapper__home-contact::before {
+    margin: 495px 0 0 0;
+  }
+  .wrapper__home-contact::after {
+    display: none;
+  }
 }
 
 /* Phablets/Tablets */
@@ -1272,8 +1309,10 @@ input[type="submit"] {
     width: 100%;
   }
   .footer__quick-nav {
-    width: 100%;
-    margin: 0 40px 0 0;
+    display: none;
+  }
+  .footer__contact {
+    margin: 0 50px 0 0;
   }
   .footer__contact > p:first-of-type {
     margin: 0 30px 0 0;
@@ -1281,19 +1320,155 @@ input[type="submit"] {
   .footer__contact > p {
     margin: 0 0 0 60px;
   }
+  .hero__encour {
+    flex-flow: column nowrap;
+    justify-content: space-between;
+  }
+  .hero__tag {
+    margin: 0 0 100px 0;
+  }
+  .elipses::before {
+    margin: 0 0 0 -410px;
+  }
+  .elipses::after {
+    margin: 0 0 0 -260px;
+  }
+  .hero__logotype::before {
+    display: none;
+  }
+  .hero__logotype::after {
+    display: none;
+  }
+  .triangles-contact::before {
+    margin: -150px 0 0 -200px;
+  }
+  .triangles-contact::after {
+    margin: 60px 0 0 -180px;
+}
 }
 
 /* Phone 6"+ */
 @media only screen and (max-width: 576px) {
-
+  .hero__logotype {
+    margin: 100px 0 200px 0;
+  }
+  .button-wrap--rev {
+    justify-content: center;
+  }
+  .button-wrap {
+    justify-content: center;
+  }
+  .offer__button-wrap {
+    display: flex;
+    justify-content: center;
+  }
+  .elipses {
+    display: none;
+  }
+  .heading {
+    text-align: center;
+  }
+  .about-us__content-wrap {
+    margin: 0;
+  }
+  .about-us__content::after {
+    margin: -450px 0 0 20px;
+  }
+  .container-about-us {
+    padding: 0;
+  }
+  .offer__heading > h1 {
+    margin: 50px 0 0 0;
+    text-align: center;
+  }
+  .offer__content > h3 {
+    margin: 25px 0 45px 0;
+    text-align: center;
+  }
+  .offer__tile:nth-child(even) {
+    margin: 0;
+  }
+  .offer__tile {
+    margin: 50px;
+  }
+  .container-contact {
+    margin: 0;
+  }
+  .wrapper__home-contact {
+    justify-content: center;
+  }
+  .triangles-contact {
+    display: none;
+  }
 }
 
-/* Phone 5"+ */
+/* Bigger Phones like Pixel/S20 */
 @media only screen and (max-width: 480px) {
-
+  .hero__logotype {
+    margin: 0 0 200px 0;
+  }
+  .hero__tag::before {
+    display: none;
+  }
+  .hero__tag {
+    width: 200px;
+  }
+  h1 {
+    font-size: 40px;
+  }
+  h3 {
+    font-size: 18px;
+  }
+  h4 {
+    font-size: 16px;
+  }
+  h5 {
+    font-size: 14px
+  }
+  h6 {
+    font-size: 14px;
+  }
+  p {
+    font-size: 14px;
+  }
+  .underline--left-section::after {
+    margin: 75px 0 0 -140px;
+  }
+  .underline--left-title::after {
+    margin: 35px 0 0 -315px;
+  }
+  .underline--left-section-offer::after {
+    margin: 75px 0 0 -170px;
+  }
+  .underline--left-section-contact::after {
+    margin: 75px 0 0 -200px;
+  }
+  .underline--right-footer-contact::after {
+    margin: 30px 50px 0 -145px;
+  }
+  .underline--right-footer::after {
+    margin: 30px 50px 0 -120px;
+  }
+  .underline--left-section-menu::after {
+    margin: 75px 0 0 -130px;
+  }
 }
 
-/* Smallest Phone about 5" */
-@media only screen and (max-width: 320px) {
-
+/*  IP X and smaller */
+@media only screen and (max-width: 375px) {
+  .navbar {
+    display: none;
+  }
+  .hero__title {
+    text-align: center;
+  }
+  .footer__contact {
+    margin: 0;
+  }
+  .footer__contact > p {
+    margin: 0;
+  }
+  .footer__contact > p:first-of-type {
+    margin: 0;
+  }
 }
