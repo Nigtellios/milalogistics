@@ -37,7 +37,7 @@
       </ul>
       <div class="nav__callus">
         <i><img src="/media/phone-icon.svg" width="27px" height="27px" alt="Zadzwoń do nas"></i>
-        <h4 class="underline--right-nav"><a href="tel:+48000000000">ZADZWOŃ DO NAS</a></h4>
+        <h4 class="underline--right-nav"><a href="tel:+48535244658">ZADZWOŃ DO NAS</a></h4>
       </div>
     </div>
     <aside class="menu__close" onclick="menuToggle();">
@@ -50,7 +50,7 @@
 
   <aside class="bottom-bar" id="mobileToggler">
     <div class="bottom-bar__contact">
-      <a href="tel:+48000000000" class="pointer">
+      <a href="tel:+48535244658" class="pointer">
         <div class="nav__callus">
           <i><img src="/media/phone-icon.svg" width="27px" height="27px" alt="Zadzwoń do nas"></i>
           <h4 class="underline--right-nav">ZADZWOŃ</h4>
