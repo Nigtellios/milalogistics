@@ -9,7 +9,7 @@
         </div>
         <div class="footer__contact">
           <h5 class="underline--right-footer-contact">SKONTAKTUJ SIĘ</h5>
-          <p><a href="tel:+48000000000">Tel: +48 000 000 000</a></p>
+          <p><a href="tel:+48535244658">Tel: +48 535 244 658</a></p>
           <p><a href="mailto:kontakt@milalogistics.pl">E-mail: kontakt@milalogistics.pl</a></p>
         </div>
         <div class="footer__quick-nav">

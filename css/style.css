@@ -166,7 +166,7 @@ a:hover {
 
 /* there was main lol */
 
-.container-hero, .container-about-us, .container-offer, .container-contact {
+.container-hero, .container-about-us, .container-offer, .container-contact, .container-about-us-page, .container-offer-page, .container-contact-page {
   width: 100%;
   box-sizing: border-box;
 }
@@ -177,12 +177,20 @@ a:hover {
   margin: 75px 0 75px 0;
 }
 
+.w-70 {
+  max-width: 70%;
+}
+
 .w-85 {
   max-width: 85%;
 }
 
 .p-5 {
   padding: 15px 0 5px 0;
+}
+
+.p-150 {
+  padding: 150px 0 0 0;
 }
 
 /* Styling */
@@ -340,6 +348,15 @@ a:hover {
   height: 12px;
   position: absolute;
   margin: 95px 0 0 -375px;
+  background: #FFC837;
+}
+
+.underline--left-section-contact-page::after {
+  content: "";
+  width: 115px;
+  height: 12px;
+  position: absolute;
+  margin: 95px 0 0 -195px;
   background: #FFC837;
 }
 
@@ -1151,13 +1168,178 @@ input[type="submit"] {
   justify-content: center;
 }
 
+/* ABOUT US PAGE */
+
+.container-about-us-page {
+  background-image: url("../media/home-aboutus-background.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  padding: 100px 0 0 0;
+}
+
+.about-us-page__content-wrap {
+  max-width: 445px;
+  margin: 0 20px 0 20px;
+  text-align: justify;
+}
+
+.about-us-page__content > .heading {
+  margin: 0 0 50px 0;
+}
+
+.container {
+  width: 100%;
+  box-sizing: border-box;
+  margin: 50px 0 50px 0;
+}
+
+.uni-wrapper{
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: space-around;
+  border-left: 3px solid #FFC837;
+}
+
+.uni-wrapper > h3 {
+  padding: 75px 100px 30px 100px;
+}
+
+.uni-wrapper-2col{
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+}
+
+.uni-wrapper-2col__column {
+  margin: 0 80px 0 80px;
+  display: flex;
+  flex-flow: column nowrap;
+  width: fit-content;
+}
+
+.uni-wrapper-2col__column > p {
+  margin: 20px;
+}
+
+.uni-wrapper__button-wrap {
+  display: flex;
+  justify-content: flex-end;
+}
+
+/* OFFER PAGE */
+
+.container-offer-page {
+  background-image: url("../media/offer-subpage-background.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  padding: 100px 0 100px 0;
+}
+
+.offer-page__number {
+  min-width: 100px;
+  text-align: center;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 144px;
+  line-height: 176px;
+  color: rgba(255, 200, 55, 0.1);
+}
+
+.offer-page__line {
+  width: 100%;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.offer-page__tile {
+  max-width: 440px;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.offer-page__tile-content {
+  margin: 20px;
+  display: flex;
+  flex-flow: column nowrap;
+}
+
+.offer-page__tile-content > h3 {
+  margin: 0 0 30px 0;
+  padding: 0 0 0 10px;
+  border-left: 3px solid #FAD900;
+}
+.mod-2 {
+  margin: 150px 0 0 0;
+}
+
+/* CONTACT PAGE */
+
+.container-contact-page {
+  background-image: url("../media/forklift.png");
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: contain;
+  padding: 200px 0 100px 0;
+}
+
+.info__boxes {
+  display: flex;
+  flex-flow: row nowrap;
+}
+
+.info-box__1 {
+  border-left: 3px solid #FAD900;
+  padding: 0 0 0 10px;
+}
+
+.info-box__2 {
+  margin: 0 0 0 30px;
+}
+
+.info__details {
+  margin: 30px 0 0 0;
+}
+
+.info {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex-start;
+  align-self: center;
+  margin: 15px 0 15px 0;
+}
+
+.cont-fill::before {
+  content: "";
+  width: 1920px;
+  height: 465px;
+  right: 0;
+  margin: 500px 0 0 0;
+  position: absolute;
+  background-image: url(../media/contact-union.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  z-index: -1;
+}
+
 /* @@@@@@@@@@@@@@@@@@@@@@@@@@@@*/
 /* @@@@@@@@@@ Media @@@@@@@@@@@*/
 /* @@@@@@@@@@@@@@@@@@@@@@@@@@@@*/
 
 /* FHD correction - cover images */
 
-@media only screen and (min-width: 1920px) {
+@media only screen and (min-width: 1921px) {
   /* poprawki do wyświetlania się tła kontenerów w sekcajch */
   .container-hero {
     background-size: cover;
@@ -1169,6 +1351,15 @@ input[type="submit"] {
     background-size: cover;
   }
   .container-contact {
+    background-size: cover;
+  }
+  .container-about-us-page {
+    background-size: cover;
+  }
+  .container-offer-page {
+    background-size: cover;
+  }
+  .container-contact-page {
     background-size: cover;
   }
 }
@@ -1212,6 +1403,19 @@ input[type="submit"] {
     margin: 0 0 0 0;
     text-align: center;
   }
+  .uni-wrapper-2col {
+    flex-flow: row wrap;
+    justify-content: center;
+  }
+  .uni-wrapper__button-wrap {
+    justify-content: center;
+  }
+  .offer-page__tile {
+    max-width: 100%;
+  }
+  .mod-2 {
+    margin: 0;
+  }
 }
 
 /* Big tablets */
@@ -1254,6 +1458,9 @@ input[type="submit"] {
   }
   .underline--left-section-menu::after {
     margin: 85px 0 0 -190px;
+  }
+  .underline--left-section-contact-page::after {
+    margin: 85px 0 0 -155px;
   }
   .map {
     display: none;
@@ -1358,7 +1565,13 @@ input[type="submit"] {
   }
   .triangles-contact::after {
     margin: 60px 0 0 -180px;
-}
+  }
+  .contact__form {
+    padding: 0;
+  }
+  .cont-fill::before {
+   display: none;
+  }
 }
 
 /* Phone 6"+ */
@@ -1426,6 +1639,24 @@ input[type="submit"] {
   .container-contact {
     background: none;
   }
+  .container-about-us-page {
+    background: none;
+  }
+  .container-offer-page {
+    background: none;
+  }
+  .container-contact-page {
+    background: none;
+  }
+  .uni-wrapper > h3 {
+    padding: 50px 50px 30px 50px;
+  }
+  .uni-wrapper-2col__column {
+    margin: 0 30px 0 30px;
+  }
+  .w-70 {
+    max-width: 85%;
+  }
 }
 
 /* Bigger Phones like Pixel/S20 */
@@ -1478,6 +1709,16 @@ input[type="submit"] {
   .underline--left-section-menu::after {
     margin: 75px 0 0 -130px;
   }
+  .underline--left-section-contact-page::after {
+    margin: 75px 0 0 -110px;
+  }
+  .p-150 {
+    padding: 0;
+  }
+  .offer-page__number {
+    min-width: 60px;
+    font-size: 80px;
+  }
 }
 
 /*  IP X and smaller */
@@ -1496,5 +1737,8 @@ input[type="submit"] {
   }
   .footer__contact > p:first-of-type {
     margin: 0;
+  }
+  .container-contact-page {
+    padding: 50px 0 100px 0;
   }
 }
