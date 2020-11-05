@@ -58,7 +58,7 @@
     ?>
   <?php 
     if(isset($_POST['submit']) && !isset($name_error) && !isset($surname_error) && !isset($subject_error) && !isset($email_error) && !isset($message_error)){
-      $to = 'shadowinkowal@gmail.com'; // edit here
+      $to = ''; // edit here
       $body = "Imię: $name\n Nazwisko: $surname\n E-mail: $email\n Wiadomość:\n $message";
       if(mail($to, $subject, $body)){
         echo '<div class="contact__send-box"><p style="color: green">Wiadomość została wysłana, dziękujemy!</p></div>';
